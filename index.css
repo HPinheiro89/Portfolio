@@ -1,0 +1,140 @@
+body {
+    background-color: #7f99c0;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  #nav-bar {
+    width: 100vw;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    background-color: #20324d;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #7f99c0;
+  }
+  #welcome-section {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    padding-top: 40vh;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  #projects {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "project1  project2 project3";
+    justify-content: center;
+    align-content: center;
+    background-color: #a4b1c4;
+    padding: 100px 20px;
+    min-width: 380px;
+  }
+  #project-header {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    grid-area: header;
+  }
+  .projects-grid {
+    width: 30vw;
+    overflow: hidden;
+    background-color: #7f99c0;
+    border-radius: 0.5em;
+  }
+  #project1.projects-grid {
+    grid-area: project1;
+  }
+  #project2.projects-grid {
+    grid-area: project2;
+  }
+  #project3.projects-grid {
+    grid-area: project3;
+  }
+  div a {
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+  .project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 30vw;
+    overflow: hidden;
+    border-radius: 0.5em;
+  }
+  footer {
+    background-color: #20324d;
+    text-align: center;
+    padding: 20px;
+    width: 100vw;
+    overflow: hidden;
+  }
+  #profile-link {
+    color: white;
+    text-decoration: none;
+  }
+  #profile-link:hover {
+    color: green;
+  }
+  @media screen and (max-width: 481px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #projects {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 10px;
+      grid-template-areas:
+        "header"
+        "project1"
+        "project2"
+        "project3";
+      justify-items: center;
+      align-content: center;
+      background-color: #a4b1c4;
+      padding-bottom: 100px;
+    }
+    .projects-grid {
+      text-align: center;
+    }
+  }
+  
